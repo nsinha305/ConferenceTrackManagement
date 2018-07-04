@@ -61,4 +61,4 @@ Track 2:
 02:30 PM A World Without HackerNews 30min
 03:00 PM Ruby on Rails Legacy App Maintenance 60min
 04:00 PM Rails for Python Developers lightning
-05:00 PM Networking Event
+05:00 PM Networking Event  
