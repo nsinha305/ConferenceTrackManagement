@@ -1,5 +1,9 @@
 package conferencetrackmanagement.utility;
 
+/**
+ * @author neesha
+ */
+s
 public class Constants {
     public static final double MORNING_SESSION_MAX_MINUTES = 180.0;
     public static final double AFTERNOON_SESSION_MAX_MINUTES = 240.0;

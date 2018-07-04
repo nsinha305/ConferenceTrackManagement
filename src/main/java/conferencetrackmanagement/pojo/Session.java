@@ -3,6 +3,10 @@ package conferencetrackmanagement.pojo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author neesha
+ */
+
 public class Session {
     List<Talk> talks;
     int remainingMinutes;

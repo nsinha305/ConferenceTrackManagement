@@ -5,6 +5,10 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author neesha
+ */
+
 public class InputReader {
     public static List<String> readFile(String fileName) {
         List<String> inputList = new ArrayList<String>();

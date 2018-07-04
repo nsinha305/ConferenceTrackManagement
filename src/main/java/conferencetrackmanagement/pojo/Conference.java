@@ -3,6 +3,10 @@ package conferencetrackmanagement.pojo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author neesha
+ */
+
 public class Conference {
     List<Track> tracks;
 

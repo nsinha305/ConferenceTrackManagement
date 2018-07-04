@@ -1,5 +1,9 @@
 package conferencetrackmanagement.utility;
 
+/**
+ * @author neesha
+ */
+
 public class Time {
     private int hours;
     private int minutes;

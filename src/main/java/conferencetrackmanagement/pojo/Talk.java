@@ -2,6 +2,10 @@ package conferencetrackmanagement.pojo;
 
 import conferencetrackmanagement.utility.Time;
 
+/**
+ * @author neesha
+ */
+
 public class Talk implements Comparable<Talk> {
     private String title;
     private int duration;

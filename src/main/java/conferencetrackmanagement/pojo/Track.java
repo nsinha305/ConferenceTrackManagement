@@ -2,6 +2,10 @@ package conferencetrackmanagement.pojo;
 
 import conferencetrackmanagement.utility.Constants;
 
+/**
+ * @author neesha
+ */
+
 public class Track {
     private Session morningSession;
     private Session lunchSession;

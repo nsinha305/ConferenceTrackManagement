@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author neesha
+ */
 public class Scheduler {
     private List<String> input;
     private Conference conference;
@@ -20,15 +23,18 @@ public class Scheduler {
 
     public Scheduler(List<String> input) throws ConferenceException {
         this.input = input;
+        this.conference = new Conference();
         convertInputToTalks();
-        setNumberOfTracks();
-        conference = new Conference();
-        assignTalksToSessionsAndTracks();
-        assignTalkTimes();
     }
 
     public Conference getConference() {
         return conference;
+    }
+
+    public void scheduleTalks() throws ConferenceException {
+        setNumberOfTracks();
+        assignTalksToSessionsAndTracks();
+        assignTalkTimes();
     }
 
     private void assignTalkTimes() {
