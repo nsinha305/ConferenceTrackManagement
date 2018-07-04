@@ -1,0 +1,11 @@
+Track 1
+09:00 AM Writing Fast Tests Against Enterprise Rails 60min
+10:00 AM Communicating Over Distance 60min
+11:00 AM Rails Magic 60min
+12:00 PM Lunch
+01:00 PM Ruby on Rails: Why We Should Move On 60min
+02:00 PM Ruby on Rails Legacy App Maintenance 60min
+03:00 PM Overdoing it in Python 45min
+03:45 PM Ruby Errors from Mismatched Gem Versions 45min
+04:30 PM Lua for the Masses 30min
+05:00 PM Networking

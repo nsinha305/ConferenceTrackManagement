@@ -1,0 +1,8 @@
+Writing Fast Tests Against Enterprise Rails 60min
+Overdoing it in Python 45min
+Lua for the Masses 30min
+Ruby Errors from Mismatched Gem Versions 45min
+Communicating Over Distance 60min
+Rails Magic 60min
+Ruby on Rails: Why We Should Move On 60min
+Ruby on Rails Legacy App Maintenance 60min
