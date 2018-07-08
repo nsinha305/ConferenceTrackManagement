@@ -10,6 +10,10 @@ import java.util.List;
  */
 
 public class InputReader {
+    /**
+     * @param fileName
+     * @return List of Strings which comprises of the file contains
+     */
     public static List<String> readFile(String fileName) {
         List<String> inputList = new ArrayList<String>();
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {

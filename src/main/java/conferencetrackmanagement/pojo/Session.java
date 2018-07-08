@@ -11,6 +11,9 @@ public class Session {
     List<Talk> talks;
     int remainingMinutes;
 
+    /**
+     * instantiates the Session object with an empty list of Talks.
+     */
     public Session() {
         talks = new ArrayList<Talk>();
     }

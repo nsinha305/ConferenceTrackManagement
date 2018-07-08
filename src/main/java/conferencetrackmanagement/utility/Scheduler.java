@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 /**
  * @author neesha
  */
+
 public class Scheduler {
     private List<String> input;
     private Conference conference;
@@ -21,22 +22,37 @@ public class Scheduler {
     private int totalMinutes = 0;
     private int numberOfTracks;
 
+    /**
+     * @param input
+     * @throws ConferenceException
+     */
     public Scheduler(List<String> input) throws ConferenceException {
         this.input = input;
         this.conference = new Conference();
         convertInputToTalks();
     }
 
+    /**
+     * Returns the conference object
+     * @return
+     */
     public Conference getConference() {
         return conference;
     }
 
+    /**
+     * This method schedules the talks in the conference
+     * @throws ConferenceException
+     */
     public void scheduleTalks() throws ConferenceException {
         setNumberOfTracks();
         assignTalksToSessionsAndTracks();
         assignTalkTimes();
     }
 
+    /**
+     * This method determines the start time of a talk based on the start time of the previous talk and its length.
+     */
     private void assignTalkTimes() {
         for (Track track : conference.getTracks()) {
             Time morningTime = new Time(9, 00, true);
@@ -57,7 +73,10 @@ public class Scheduler {
         }
     }
 
-    // using first fit bin packing algorithm
+    /**
+     * This method uses first fit bin packing algorithm to assign talks to different sessions and tracks
+     * @throws ConferenceException
+     */
     private void assignTalksToSessionsAndTracks() throws ConferenceException {
         Collections.sort(talks);
         //System.out.println("Number of tracks : "+numberOfTracks);
@@ -66,10 +85,7 @@ public class Scheduler {
 
         for (Talk talk : talks) {
             boolean isTalkAssigned = false;
-            //System.out.println(conference.getTracks().size());
             for (Track track : conference.getTracks()) {
-                //System.out.println("morning session remaining minutes : "+track.getMorningSession().getRemainingMinutes());
-                //System.out.println("afternoon session remaining minutes : "+track.getAfternoonSession().getRemainingMinutes());
                 if (track.getMorningSession().getRemainingMinutes() >= talk.getDuration()) {
                     isTalkAssigned = true;
                     track.getMorningSession().getTalks().add(talk);
@@ -87,6 +103,9 @@ public class Scheduler {
         }
     }
 
+    /**
+     * This method counts the total minutes of each talk and determines how many tracks (days) would be needed.
+     */
     private void setNumberOfTracks() {
         double minutesPerTrack = Constants.AFTERNOON_SESSION_MAX_MINUTES + Constants.MORNING_SESSION_MAX_MINUTES;
         double tracks = totalMinutes / minutesPerTrack;
@@ -96,8 +115,12 @@ public class Scheduler {
             numberOfTracks++;
     }
 
+    /**
+     * This method parses the input into a list of Talks.
+     * @throws ConferenceException
+     */
     private void convertInputToTalks() throws ConferenceException {
-        talks = new ArrayList<Talk>();
+        talks = new ArrayList<>();
         for (String inputString : input) {
             Pattern pattern = Pattern.compile("(.*)(\\s){1}([0-2]?[0-9]?[0-9]{1}min|lightning)\\b");
             Matcher matcher = pattern.matcher(inputString);
@@ -112,6 +135,11 @@ public class Scheduler {
         }
     }
 
+    /**
+     * @param timestring
+     * @return
+     * @throws ConferenceException
+     */
     private int getTalkTime(String timestring) throws ConferenceException {
         int talktime = 0;
         if (timestring.endsWith(Constants.MIN_SUFFIX))
