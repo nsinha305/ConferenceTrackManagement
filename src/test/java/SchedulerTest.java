@@ -36,6 +36,8 @@ public class SchedulerTest {
         Conference conference = scheduler.getConference();
         Scanner scanner = new Scanner(new File(inputFile + "Output.txt"));
         String text = scanner.useDelimiter("\\A").next();
+        System.out.println(text.trim());
+        System.out.println(conference.toString().trim());
         assertTrue(text.trim().equals(conference.toString().trim()));
         scanner.close();
     }

@@ -34,6 +34,7 @@ public class Scheduler {
 
     /**
      * Returns the conference object
+     *
      * @return
      */
     public Conference getConference() {
@@ -42,19 +43,22 @@ public class Scheduler {
 
     /**
      * This method schedules the talks in the conference
+     *
      * @throws ConferenceException
      */
     public void scheduleTalks() throws ConferenceException {
         setNumberOfTracks();
         assignTalksToSessionsAndTracks();
-        assignTalkTimes();
-    }
 
-    /**
+        //assignTalkTimes();
+    }
+/*
+    *//**
      * This method determines the start time of a talk based on the start time of the previous talk and its length.
-     */
+     *//*
     private void assignTalkTimes() {
         for (Track track : conference.getTracks()) {
+
             Time morningTime = new Time(9, 00, true);
             for (Talk talk : track.getMorningSession().getTalks()) {
                 talk.setStartTime(morningTime);
@@ -71,34 +75,25 @@ public class Scheduler {
                 nHours = 4;
             track.getNetworkingSession().getTalks().add(new Talk("Networking", 60, new Time(nHours, 0, false), ""));
         }
-    }
+    }*/
 
     /**
      * This method uses first fit bin packing algorithm to assign talks to different sessions and tracks
+     *
      * @throws ConferenceException
      */
     private void assignTalksToSessionsAndTracks() throws ConferenceException {
         Collections.sort(talks);
-        //System.out.println("Number of tracks : "+numberOfTracks);
-        for (int i = 0; i < numberOfTracks; i++)
-            conference.getTracks().add(new Track());
-
         for (Talk talk : talks) {
-            boolean isTalkAssigned = false;
             for (Track track : conference.getTracks()) {
-                if (track.getMorningSession().getRemainingMinutes() >= talk.getDuration()) {
-                    isTalkAssigned = true;
-                    track.getMorningSession().getTalks().add(talk);
-                    track.getMorningSession().setRemainingMinutes(track.getMorningSession().getRemainingMinutes() - talk.getDuration());
-                } else if (track.getAfternoonSession().getRemainingMinutes() >= talk.getDuration()) {
-                    isTalkAssigned = true;
-                    track.getAfternoonSession().getTalks().add(talk);
-                    track.getAfternoonSession().setRemainingMinutes(track.getAfternoonSession().getRemainingMinutes() - talk.getDuration());
-                }
-                if (isTalkAssigned)
+                if (track.getMorningSession().canFit(talk))
+                    track.getMorningSession().addTalk(talk);
+                else if (track.getAfternoonSession().canFit(talk))
+                    track.getAfternoonSession().addTalk(talk);
+                if (talk.isAssigned())
                     break;
             }
-            if (!isTalkAssigned)
+            if (!talk.isAssigned())
                 throw new ConferenceException("talk does not fit");
         }
     }
@@ -113,10 +108,12 @@ public class Scheduler {
         numberOfTracks = (int) tracks;
         if (remainder > 0.0)
             numberOfTracks++;
+        conference.assignTracks(numberOfTracks);
     }
 
     /**
      * This method parses the input into a list of Talks.
+     *
      * @throws ConferenceException
      */
     private void convertInputToTalks() throws ConferenceException {

@@ -11,12 +11,14 @@ public class Talk implements Comparable<Talk> {
     private int duration;
     private Time startTime;
     private String durationString;
+    private boolean isAssigned;
 
     public Talk(String title, int duration, Time startTime, String durationString) {
         this.title = title;
         this.duration = duration;
         this.startTime = startTime;
         this.durationString = durationString;
+        this.isAssigned = false;
     }
 
     @Override
@@ -54,6 +56,14 @@ public class Talk implements Comparable<Talk> {
 
     public void setDurationString(String durationString) {
         this.durationString = durationString;
+    }
+
+    public boolean isAssigned() {
+        return isAssigned;
+    }
+
+    public void setAssigned(boolean assigned) {
+        isAssigned = assigned;
     }
 
     @Override

@@ -17,6 +17,7 @@ public class Main {
             Scheduler scheduler = new Scheduler(InputReader.readFile(args[0]));
             scheduler.scheduleTalks();
             Conference conference = scheduler.getConference();
+            conference.organizeTracks();
             System.out.println(conference.toString());
         } catch (ConferenceException e) {
             System.out.println(e.getMessage());

@@ -1,24 +1,35 @@
 package conferencetrackmanagement.pojo;
 
-import conferencetrackmanagement.utility.Constants;
+import conferencetrackmanagement.utility.Time;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author neesha
  */
 
 public class Track {
+    private List<Session> sessions;
     private Session morningSession;
-    private Session lunchSession;
     private Session afternoonSession;
-    private Session networkingSession;
 
     public Track() {
-        morningSession = new Session();
-        morningSession.setRemainingMinutes((int)Constants.MORNING_SESSION_MAX_MINUTES);
-        lunchSession = new Session();
-        afternoonSession = new Session();
-        afternoonSession.setRemainingMinutes((int)Constants.AFTERNOON_SESSION_MAX_MINUTES);
-        networkingSession = new Session();
+        sessions = new ArrayList<>();
+        morningSession = new Session(SessionType.MORNING);
+        afternoonSession = new Session(SessionType.AFTERNOON);
+        sessions.add(morningSession);
+        sessions.add(new Session(SessionType.LUNCH));
+        sessions.add(afternoonSession);
+        sessions.add(new Session(SessionType.NETWORKING));
+    }
+
+    public List<Session> getSessions() {
+        return sessions;
+    }
+
+    public void setSessions(List<Session> sessions) {
+        this.sessions = sessions;
     }
 
     public Session getMorningSession() {
@@ -29,14 +40,6 @@ public class Track {
         this.morningSession = morningSession;
     }
 
-    public Session getLunchSession() {
-        return lunchSession;
-    }
-
-    public void setLunchSession(Session lunchSession) {
-        this.lunchSession = lunchSession;
-    }
-
     public Session getAfternoonSession() {
         return afternoonSession;
     }
@@ -45,11 +48,23 @@ public class Track {
         this.afternoonSession = afternoonSession;
     }
 
-    public Session getNetworkingSession() {
-        return networkingSession;
-    }
-
-    public void setNetworkingSession(Session networkingSession) {
-        this.networkingSession = networkingSession;
+    public void organizeTalks() {
+        Time networkingSessionStartTime = null;
+        for (Session session : getSessions()) {
+            if (session.getSessionType() != SessionType.NETWORKING) {
+                if (session.getSessionType() == SessionType.AFTERNOON)
+                    networkingSessionStartTime = session.defineTalkTimes();
+                else
+                    session.defineTalkTimes();
+            }
+        }
+        for (Session session : getSessions()) {
+            if (session.getSessionType() == SessionType.NETWORKING) {
+                int nHours = (networkingSessionStartTime.getMinutes() > 0) ? networkingSessionStartTime.getHours() + 1 : networkingSessionStartTime.getHours();
+                if (nHours < 4)
+                    nHours = 4;
+                session.getTalks().add(new Talk("Networking", 60, new Time(nHours, 0, false), ""));
+            }
+        }
     }
 }
