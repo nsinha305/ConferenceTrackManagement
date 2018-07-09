@@ -1,7 +1,11 @@
 package conferencetrackmanagement.pojo;
 
 import conferencetrackmanagement.exception.ConferenceException;
+import conferencetrackmanagement.utility.Constants;
 import conferencetrackmanagement.utility.Time;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author neesha
@@ -20,6 +24,12 @@ public class Talk implements Comparable<Talk> {
         this.startTime = startTime;
         this.durationString = durationString;
         this.isAssigned = false;
+    }
+
+    public Talk(String title, int duration) {
+        this.title = title;
+        this.duration = duration;
+
     }
 
     @Override
@@ -75,8 +85,28 @@ public class Talk implements Comparable<Talk> {
     public static Talk createTalkFromString(String s) throws ConferenceException {
         if (s == null)
             throw new ConferenceException("Input is null");
-        if(s.isEmpty())
+        if (s.isEmpty())
             throw new ConferenceException("Input is empty");
-        return null;
+
+        Pattern pattern = Pattern.compile(Constants.REGEX_PATTERN);
+        Matcher matcher = pattern.matcher(s);
+        if (!matcher.matches()) {
+            throw new ConferenceException("Input format is incorrect");
+        }
+
+        Talk talk = new Talk(matcher.group(1), parseDuration(matcher.group(3)));
+        return talk;
     }
+
+    public static int parseDuration(String s) throws ConferenceException{
+        int talktime = 0;
+        if (s.endsWith(Constants.MIN_SUFFIX))
+            talktime = Integer.parseInt(s.substring(0, s.indexOf(Constants.MIN_SUFFIX)));
+        else if (s.endsWith(Constants.LIGHTNING_SUFFIX))
+            talktime = Constants.LIGHTNING_MINUTES;
+        else
+            throw new ConferenceException("Input format is incorrect");
+        return talktime;
+    }
+
 }

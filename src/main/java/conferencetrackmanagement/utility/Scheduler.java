@@ -16,6 +16,7 @@ import java.util.regex.Pattern;
  */
 
 public class Scheduler {
+
     private List<String> input;
     private Conference conference;
     private List<Talk> talks;
@@ -119,7 +120,7 @@ public class Scheduler {
     private void convertInputToTalks() throws ConferenceException {
         talks = new ArrayList<>();
         for (String inputString : input) {
-            Pattern pattern = Pattern.compile("(.*)(\\s){1}([0-2]?[0-9]?[0-9]{1}min|lightning)\\b");
+            Pattern pattern = Pattern.compile(Constants.REGEX_PATTERN);
             Matcher matcher = pattern.matcher(inputString);
             if (!matcher.matches()) {
                 throw new ConferenceException("Input format is incorrect");

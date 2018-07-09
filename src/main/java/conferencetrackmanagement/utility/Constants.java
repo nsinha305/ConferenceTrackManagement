@@ -10,4 +10,5 @@ public class Constants {
     public static final String MIN_SUFFIX = "min";
     public static final String LIGHTNING_SUFFIX = "lightning";
     public static final int LIGHTNING_MINUTES = 5;
+    public static final String REGEX_PATTERN = "(.*)(\\s){1}([0-2]?[0-9]?[0-9]{1}min|lightning)\\b";
 }
