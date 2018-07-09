@@ -1,5 +1,6 @@
 package conferencetrackmanagement.pojo;
 
+import conferencetrackmanagement.exception.ConferenceException;
 import conferencetrackmanagement.utility.Time;
 
 /**
@@ -69,5 +70,13 @@ public class Talk implements Comparable<Talk> {
     @Override
     public String toString() {
         return (startTime.toString() + " " + title + " " + durationString).trim();
+    }
+
+    public static Talk createTalkFromString(String s) throws ConferenceException {
+        if (s == null)
+            throw new ConferenceException("Input is null");
+        if(s.isEmpty())
+            throw new ConferenceException("Input is empty");
+        return null;
     }
 }

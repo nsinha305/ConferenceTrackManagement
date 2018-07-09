@@ -1,3 +1,5 @@
+package endToEndTests;
+
 import conferencetrackmanagement.exception.ConferenceException;
 import conferencetrackmanagement.pojo.Conference;
 import conferencetrackmanagement.utility.InputReader;
