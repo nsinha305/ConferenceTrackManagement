@@ -61,4 +61,8 @@ Track 2:<br />
 02:30 PM A World Without HackerNews 30min<br />
 03:00 PM Ruby on Rails Legacy App Maintenance 60min<br />
 04:00 PM Rails for Python Developers lightning<br />
-05:00 PM Networking Event  
+05:00 PM Networking Event  <br />
+<br />
+<h3>How to run :</h3>
+<br /> Navigate to the project root folder in terminal and run 'gradle build'
+<br /> Now run the command 'java -jar build/libs/ConferenceTrackManagement-1.0-SNAPSHOT.jar <input-path>'
