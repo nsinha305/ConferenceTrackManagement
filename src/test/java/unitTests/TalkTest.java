@@ -48,4 +48,24 @@ public class TalkTest {
         assertEquals(talk.getTitle(), "Ruby on Rails Legacy App Maintenance");
         assertEquals(talk.getDuration(), 5);
     }
+
+    @Test
+    public void shouldReturnIntegerDurationGivenLightning() throws ConferenceException{
+        String s = "lightning";
+        assertEquals(Talk.parseDuration(s), 5);
+    }
+
+    @Test
+    public void shouldReturnIntegerDurationGivenValidDuration() throws ConferenceException{
+        String s = "60min";
+        assertEquals(Talk.parseDuration(s), 60);
+    }
+
+    @Test
+    public void shouldThrowConferenceExceptionGivenInvalidDuration() throws ConferenceException{
+        String s = "60";
+        exception.expect(ConferenceException.class);
+        exception.expectMessage("Input format is incorrect");
+        Talk.parseDuration(s);
+    }
 }

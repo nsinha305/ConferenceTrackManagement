@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbede313-e709-4df5-8eb1-35118f51e1a0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Talk.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Talk.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Scheduler.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Scheduler.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/unitTests/TalkTest.java" afterPath="$PROJECT_DIR$/src/test/java/unitTests/TalkTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +26,8 @@
           <file leaf-file-name="Talk.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Talk.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="100" column="72" lean-forward="false" selection-start-line="100" selection-start-column="72" selection-end-line="100" selection-end-column="72" />
+                <state relative-caret-position="445">
+                  <caret line="107" column="68" lean-forward="false" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="68" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1639#1640#0" expanded="true" />
@@ -49,8 +46,8 @@
           <file leaf-file-name="TalkTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/unitTests/TalkTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="175">
-                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <state relative-caret-position="408">
+                  <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -432,10 +429,10 @@
         <option value="$PROJECT_DIR$/src/test/java/endToEndTests/SchedulerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/unitTests/TimeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/unitTests/SchedulerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/unitTests/TalkTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Scheduler.java" />
         <option value="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Talk.java" />
+        <option value="$PROJECT_DIR$/src/test/java/unitTests/TalkTest.java" />
       </list>
     </option>
   </component>
@@ -597,7 +594,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TalkTest">
+  <component name="RunManager" selected="JUnit.TalkTest.shouldThrowConferenceExceptionGivenInvalidDuration">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -664,6 +661,56 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="TalkTest.shouldReturnIntegerDurationGivenLightning" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ConferenceTrackManagement_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.TalkTest" />
+      <option name="METHOD_NAME" value="shouldReturnIntegerDurationGivenLightning" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TalkTest.shouldReturnIntegerDurationGivenValidDuration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ConferenceTrackManagement_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.TalkTest" />
+      <option name="METHOD_NAME" value="shouldReturnIntegerDurationGivenValidDuration" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="TalkTest.shouldReturnValidLightningTalkGivenValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -689,7 +736,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TalkTest.shouldReturnValidTalkGivenValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TalkTest.shouldThrowConferenceExceptionGivenInvalidDuration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unitTests.*" />
@@ -701,57 +748,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unitTests" />
       <option name="MAIN_CLASS_NAME" value="unitTests.TalkTest" />
-      <option name="METHOD_NAME" value="shouldReturnValidTalkGivenValidInput" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TalkTest.shouldReturnValidTalkGivenValidInput2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ConferenceTrackManagement_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.TalkTest" />
-      <option name="METHOD_NAME" value="shouldReturnValidTalkGivenValidInput2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TalkTest.shouldThrowConferenceExceptionGivenInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ConferenceTrackManagement_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.TalkTest" />
-      <option name="METHOD_NAME" value="shouldThrowConferenceExceptionGivenInvalidInput" />
+      <option name="METHOD_NAME" value="shouldThrowConferenceExceptionGivenInvalidDuration" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -826,19 +823,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in ConferenceTrackManagement_test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldThrowConferenceExceptionGivenInvalidInput" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidTalkGivenValidInput" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidTalkGivenValidInput2" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidLightningTalkGivenValidInput" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TalkTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidLightningTalkGivenValidInput" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TalkTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnIntegerDurationGivenLightning" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnIntegerDurationGivenValidDuration" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldThrowConferenceExceptionGivenInvalidDuration" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TalkTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidLightningTalkGivenValidInput" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidTalkGivenValidInput2" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidTalkGivenValidInput" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldThrowConferenceExceptionGivenInvalidInput" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldThrowConferenceExceptionGivenInvalidDuration" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnIntegerDurationGivenValidDuration" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnIntegerDurationGivenLightning" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TalkTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TalkTest.shouldReturnValidLightningTalkGivenValidInput" />
       </list>
     </recent_temporary>
   </component>
@@ -859,6 +856,12 @@
     <history-entry file="TalkTest - 2018.07.09 at 11h 29m 29s.xml">
       <configuration name="TalkTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TalkTest_shouldReturnIntegerDurationGivenLightning - 2018.07.09 at 11h 31m 28s.xml">
+      <configuration name="TalkTest.shouldReturnIntegerDurationGivenLightning" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TalkTest_shouldReturnIntegerDurationGivenValidDuration - 2018.07.09 at 11h 32m 00s.xml">
+      <configuration name="TalkTest.shouldReturnIntegerDurationGivenValidDuration" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TalkTest_shouldReturnValidLightningTalkGivenValidInput - 2018.07.09 at 11h 22m 55s.xml">
       <configuration name="TalkTest.shouldReturnValidLightningTalkGivenValidInput" configurationId="JUnit" />
     </history-entry>
@@ -877,14 +880,8 @@
     <history-entry file="TalkTest_shouldReturnValidTalkGivenValidInput2 - 2018.07.09 at 11h 21m 20s.xml">
       <configuration name="TalkTest.shouldReturnValidTalkGivenValidInput2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TalkTest_shouldThrowConferenceExceptionGivenInvalidInput - 2018.07.09 at 11h 13m 23s.xml">
-      <configuration name="TalkTest.shouldThrowConferenceExceptionGivenInvalidInput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TalkTest_shouldThrowNullExceptionGivenNullString - 2018.07.09 at 11h 12m 32s.xml">
-      <configuration name="TalkTest.shouldThrowNullExceptionGivenNullString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TalkTest_shouldThrowNullExceptionGivenNullString - 2018.07.09 at 11h 13m 12s.xml">
-      <configuration name="TalkTest.shouldThrowNullExceptionGivenNullString" configurationId="JUnit" />
+    <history-entry file="TalkTest_shouldThrowConferenceExceptionGivenInvalidDuration - 2018.07.09 at 11h 33m 05s.xml">
+      <configuration name="TalkTest.shouldThrowConferenceExceptionGivenInvalidDuration" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1391,8 +1388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Talk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="100" column="72" lean-forward="false" selection-start-line="100" selection-start-column="72" selection-end-line="100" selection-end-column="72" />
+        <state relative-caret-position="445">
+          <caret line="107" column="68" lean-forward="false" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1639#1640#0" expanded="true" />
@@ -1405,8 +1402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/unitTests/TalkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
