@@ -2,61 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbede313-e709-4df5-8eb1-35118f51e1a0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/SessionType.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/exception/ConferenceException.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/exception/ConferenceException.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/main/Main.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/main/Main.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Conference.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Conference.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Session.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Session.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Talk.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Talk.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Track.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/pojo/Track.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/Constants.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/Constants.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/InputReader.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/InputReader.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/Scheduler.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/Scheduler.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/Time.class" afterPath="$PROJECT_DIR$/build/classes/java/main/conferencetrackmanagement/utility/Time.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SchedulerTest.class" afterPath="$PROJECT_DIR$/build/classes/java/test/SchedulerTest.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TimeTest.class" afterPath="$PROJECT_DIR$/build/classes/java/test/TimeTest.class" />
-      <change beforePath="$PROJECT_DIR$/build/libs/ConferenceTrackManagement-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/ConferenceTrackManagement-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/SchedulerTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/SchedulerTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TimeTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/TimeTest.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-SchedulerTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-SchedulerTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TimeTest.xml" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-TimeTest.xml" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/exception/ConferenceException.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/exception/ConferenceException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/main/Main.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/main/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Conference.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Conference.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Session.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Session.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Talk.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Talk.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Track.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/pojo/Track.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/Constants.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/Constants.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/InputReader.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/InputReader.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/Scheduler.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/Scheduler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/Time.class" afterPath="$PROJECT_DIR$/out/production/classes/conferencetrackmanagement/utility/Time.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SchedulerTest.class" afterPath="$PROJECT_DIR$/out/test/classes/SchedulerTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/TimeTest.class" afterPath="$PROJECT_DIR$/out/test/classes/TimeTest.class" />
-      <change beforePath="$PROJECT_DIR$/res/ConferenceData.txt" afterPath="$PROJECT_DIR$/res/ConferenceData.txt" />
-      <change beforePath="$PROJECT_DIR$/res/ConferenceWith299MinTalk.txt" afterPath="$PROJECT_DIR$/res/ConferenceWith299MinTalk.txt" />
-      <change beforePath="$PROJECT_DIR$/res/ManyDaysConference.txt" afterPath="$PROJECT_DIR$/res/ManyDaysConference.txt" />
-      <change beforePath="$PROJECT_DIR$/res/ManyDaysConferenceOutput.txt" afterPath="$PROJECT_DIR$/res/ManyDaysConferenceOutput.txt" />
-      <change beforePath="$PROJECT_DIR$/res/OneDayConference.txt" afterPath="$PROJECT_DIR$/res/OneDayConference.txt" />
-      <change beforePath="$PROJECT_DIR$/res/OneDayConferenceOutput.txt" afterPath="$PROJECT_DIR$/res/OneDayConferenceOutput.txt" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/main/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Conference.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Conference.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Session.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Session.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Talk.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Talk.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Track.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/Track.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Scheduler.java" afterPath="$PROJECT_DIR$/src/main/java/conferencetrackmanagement/utility/Scheduler.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SchedulerTest.java" afterPath="$PROJECT_DIR$/src/test/java/SchedulerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -176,11 +121,21 @@
       <file leaf-file-name="SchedulerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SchedulerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="646">
+              <caret line="34" column="86" lean-forward="false" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/conferencetrackmanagement/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="19" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -604,6 +559,15 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="conferencetrackmanagement" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConferenceTrackManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConferenceTrackManagement" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conferencetrackmanagement" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -885,8 +849,8 @@
     <history-entry file="SchedulerTest - 2018.07.08 at 23h 08m 49s.xml">
       <configuration name="SchedulerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TimeTest - 2018.06.12 at 22h 08m 57s.xml">
-      <configuration name="TimeTest" configurationId="JUnit" />
+    <history-entry file="SchedulerTest - 2018.07.08 at 23h 22m 11s.xml">
+      <configuration name="SchedulerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TimeTest - 2018.06.12 at 22h 17m 32s.xml">
       <configuration name="TimeTest" configurationId="JUnit" />
@@ -909,7 +873,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -919,7 +882,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1236,16 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conferencetrackmanagement/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/conferencetrackmanagement/pojo/SessionType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1381,10 +1334,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conferencetrackmanagement/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="19" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SchedulerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="646">
+          <caret line="34" column="86" lean-forward="false" selection-start-line="34" selection-start-column="86" selection-end-line="34" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

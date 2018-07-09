@@ -33,11 +33,11 @@ public class SchedulerTest {
 
     private void testScheduler(String inputFile) throws ConferenceException, FileNotFoundException {
         Scheduler scheduler = new Scheduler(InputReader.readFile(inputFile + ".txt"));
+        scheduler.scheduleTalks();
         Conference conference = scheduler.getConference();
+        conference.organizeTracks();
         Scanner scanner = new Scanner(new File(inputFile + "Output.txt"));
         String text = scanner.useDelimiter("\\A").next();
-        System.out.println(text.trim());
-        System.out.println(conference.toString().trim());
         assertTrue(text.trim().equals(conference.toString().trim()));
         scanner.close();
     }
